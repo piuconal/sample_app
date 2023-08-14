@@ -1,0 +1,36 @@
+vi:
+  layouts:
+    application:
+      base_title: "Ứng dụng mẫu hướng dẫn Rails"
+  navbar:
+    brand: "ỨNG DỤNG MẪU"
+    english: "Tiếng Anh"
+    vietnamese: "Tiếng Việt"
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    login: "Đăng nhập"
+  sign_up: "Đăng ký"
+  name: "Tên"
+  email: "Email"
+  password: "Mật khẩu"
+  confirmation: "Xác nhận"
+  create_my_account: "Tạo tài khoản của tôi"
+  flash:
+    users:
+      not_found: "Không tìm thấy người dùng!"
+      welcome: "Chào mừng đến với ứng dụng mẫu!"
+  help:
+    title: "TRỢ GIÚP"
+    help_text: "Để được trợ giúp về Hướng dẫn Ruby on Rails, vui lòng truy cập"
+    book_text: "Để được trợ giúp về ứng dụng mẫu này, xem"
+
+  home:
+    title: "TRANG CHỦ"
+    welcome_message: "Chào mừng đến với Ứng dụng Mẫu"
+    tutorial_link: "Hướng dẫn Ruby on Rails"
+    sample_app_description: "Đây là trang chủ cho ứng dụng mẫu."
+    signup_button: "Đăng ký ngay!"
+
+  rails_tutorial:
+    help_page: "Trang trợ giúp Hướng dẫn Ruby on Rails"
+    book_link: "Sách Hướng dẫn Ruby on Rails"
