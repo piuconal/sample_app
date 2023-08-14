@@ -1,7 +1,6 @@
 require_relative "boot"
-
 require "rails/all"
-
+require "settingslogic"
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -18,5 +17,14 @@ module RailsTutorial
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.i18n.default_locale = :en
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
   end
+  # config/application.rb or an initializer file
+
+  class Settings < Settingslogic
+    source "#{Rails.root}/config/settings.yml"
+    namespace Rails.env
+  end
+
 end
