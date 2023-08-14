@@ -1,0 +1,7 @@
+user:
+  name:
+    min_length: 1
+    max_length: 50
+  email:
+    max_length: 255
+    valid_regex: "\A[\\w+\\-.]+@[a-z\\d\\-.]+\\.[a-z]+\\z"
