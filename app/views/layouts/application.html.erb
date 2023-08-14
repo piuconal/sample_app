@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>RailsTutorial</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title><%= full_title yield :title %></title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag "application", media: "all","data-turbolinks-track": "reload" %>
+  <%= javascript_importmap_tags %>
+  <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' %>
+  <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js' %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
-
-  <body>
+</head>
+<body>
+  <%= render "layouts/header" %>
+  <div class="container">
     <%= yield %>
-  </body>
+  </div>
+</body>
 </html>

@@ -1,0 +1,46 @@
+vi:
+  layouts:
+    application:
+      base_title: 'Ứng dụng mẫu hướng dẫn Rails'
+  navbar:
+      brand: "ỨNG DỤNG MẪU"
+      english: "Tiếng Anh"
+      vietnamese: "Tiếng Việt"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
+  users:
+    index:
+      title: "Người dùng"
+      show_user: "Xem người dùng này"
+      new_user: "Người dùng mới"
+  notices:
+    success: "Thao tác thành công."
+  products:
+    index:
+      title: "Sản phẩm"
+      name: "Tên"
+      new_product: "Sản phẩm mới"
+      no_products: "Không có sản phẩm nào"
+      show: "Xem"
+      edit: "Chỉnh sửa"
+      destroy: "Xóa"
+    show:
+      edit_product: "Chỉnh sửa sản phẩm này"
+      back_to_products: "Quay lại danh sách sản phẩm"
+    destroy:
+      destroy_this_product: "Xóa sản phẩm này"
+    edit:
+      title: "Chỉnh sửa sản phẩm"
+      show_product: "Xem sản phẩm này"
+      back_to_products: "Quay lại danh sách sản phẩm"
+    new:
+      title: "Sản phẩm mới"
+    form:
+      back_to_products: "Quay lại danh sách sản phẩm"
+  notices:
+    success: "Thao tác thành công."
+  activerecord:
+    attributes:
+      product:
+        name: "Tên"
