@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
 
   # GET /products or /products.json
   def index
-    @list_abc = Product.all
+    @products = Product.all
   end
 
   # GET /products/1 or /products/1.json
@@ -57,7 +57,7 @@ class ProductsController < ApplicationController
 
   # DELETE /products/1 or /products/1.json
   def destroy
-    @product.destroy!
+    @product.destroy
 
     respond_to do |format|
       format.html do
