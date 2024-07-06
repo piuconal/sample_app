@@ -1,6 +1,6 @@
 <tr>
   <td><%= product.name %></td>
-  <td><%= link_to 'Show', product %></td>
-  <td><%= link_to 'Edit', edit_product_path(product) %></td>
-  <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure' } %></td>
+  <td><%= link_to t('products.index.show'), product, class: 'btn btn-info' %></td>
+  <td><%= link_to t('products.index.edit'), edit_product_path(product), class: 'btn btn-warning' %></td>
+  <td><%= link_to t('products.index.destroy'), product, method: :delete, data: { confirm: t('products.index.confirm_destroy') }, class: 'btn btn-danger' %></td>
 </tr>

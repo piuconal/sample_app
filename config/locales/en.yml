@@ -30,4 +30,49 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      base_title: 'Ruby on Rails Tutorial Sample App'
+  navbar:
+      brand: "SAMPLE APP"
+      english: "English"
+      vietnamese: "Vietnamese"
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+  users:
+    index:
+      title: "Users"
+      show_user: "Show this user"
+      new_user: "New user"
+  notices:
+    success: "Operation was successful."
+  products:
+    index:
+      title: "Products"
+      name: "Name"
+      new_product: "New product"
+      no_products: "No Products"
+      show: "Show"
+      edit: "Edit"
+      destroy: "Destroy"
+    show:
+      edit_product: "Edit this product"
+      back_to_products: "Back to products"
+    destroy:
+      destroy_this_product: "Destroy This Product"
+    edit:
+      title: "Editing product"
+      show_product: "Show this product"
+      back_to_products: "Back to products"
+    new:
+      title: "New product"
+    form:
+      back_to_products: "Back to products"
+  notices:
+    success: "Operation was successful."
+  activerecord:
+    attributes:
+      product:
+        name: "Name"
+

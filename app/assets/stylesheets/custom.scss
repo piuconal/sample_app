@@ -1,49 +1,52 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-
 /* universal */
 body {
-  // padding-top: 60px;
+  padding-top: 100px;
 }
-section {
-  overflow: auto;
-}
-textarea {
-  resize: vertical;
-}
-.center {
-  text-align: center;
-}
-.center h1 {
-  margin-bottom: 10px;
-}
-
-/* header */
-#my-logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
+#logo {
+  font-size: 2em;
   font-weight: bold;
 }
-#my-logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
 
-nav {
-  height: 60px;
-
+.nav-link {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .navbar {
-  background-color: #000; /* Màu đen */
+  background-color: #333;
+  border-radius: 0;
 }
 
-td {
-  padding: 5px;
-  text-align: center;
+.navbar-brand {
+  color: #fff !important;
 }
+
+.nav > li > a {
+  color: #fff !important;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+  background-color: #555;
+}
+
+.navbar-toggle {
+  border-color: #fff;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+}
+
