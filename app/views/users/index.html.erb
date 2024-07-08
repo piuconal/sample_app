@@ -1,0 +1,14 @@
+<p style="color: green"><%= t('notices.success') %></p>
+
+<h1><%= t('users.index.title') %></h1>
+
+<div id="users">
+  <% @users.each do |user| %>
+    <%= render user %>
+    <p>
+      <%= link_to t('users.index.show_user'), user %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to t('users.index.new_user'), new_user_path %>
