@@ -19,6 +19,7 @@ en:
     users:
       not_found: "User not found!"
       welcome: "Welcome to the Sample App!"
+      remember_me: "Remember me on this computer"
     logged_out: "You have successfully logged out."
   help:
     title: "HELP"

@@ -19,6 +19,7 @@ vi:
     users:
       not_found: "Không tìm thấy người dùng!"
       welcome: "Chào mừng đến với ứng dụng mẫu!"
+      remember_me: "Hãy nhớ tôi trên máy tính này"
     logged_out: "Bạn đã đăng xuất."
   help:
     title: "TRỢ GIÚP"
