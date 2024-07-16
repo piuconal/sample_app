@@ -20,6 +20,27 @@ en:
       not_found: "User not found!"
       welcome: "Welcome to the Sample App!"
       remember_me: "Remember me on this computer"
+      updated: "User updated successfully."
+      deleted: "User deleted."
+      delete_failed: "Delete failed!"
+      login_required: "Please log in."
+      edit_not_permitted: "You cannot edit this account."
+      delete: "delete"
+      confirm_delete: "Are you sure?"
+      index:
+        title: "All users"
+        heading: "All users"
+      edit:
+        title: "Edit user"
+        button_text: "Save changes"
+        heading: "Update your profile"
+        change_gravatar: "change"
+        form:
+          name: "Name"
+          email: "Email"
+          password: "Password"
+          password_confirmation: "Password confirmation"
+
     logged_out: "You have successfully logged out."
   help:
     title: "HELP"

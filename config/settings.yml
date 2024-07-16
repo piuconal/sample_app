@@ -5,3 +5,7 @@ user:
   email:
     max_length: 255
     valid_regex: '\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z'
+pagy:
+    items: 10
+gravatar:
+    size: 70

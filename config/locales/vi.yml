@@ -20,6 +20,26 @@ vi:
       not_found: "Không tìm thấy người dùng!"
       welcome: "Chào mừng đến với ứng dụng mẫu!"
       remember_me: "Hãy nhớ tôi trên máy tính này"
+      updated: "Cập nhật người dùng thành công."
+      deleted: "Đã xóa người dùng."
+      delete_failed: "Xóa không thành công!"
+      login_required: "Vui lòng đăng nhập."
+      edit_not_permitted: "Bạn không thể chỉnh sửa tài khoản này."
+      delete: "xóa"
+      confirm_delete: "Bạn có chắc chắn không?"
+      index:
+        title: "Tất cả người dùng"
+        heading: "Tất cả người dùng"
+      edit:
+        title: "Chỉnh sửa người dùng"
+        button_text: "Lưu thay đổi"
+        heading: "Cập nhật hồ sơ của bạn"
+        change_gravatar: "thay đổi"
+        form:
+          name: "Tên"
+          email: "Email"
+          password: "Mật khẩu"
+          password_confirmation: "Xác nhận mật khẩu"
     logged_out: "Bạn đã đăng xuất."
   help:
     title: "TRỢ GIÚP"

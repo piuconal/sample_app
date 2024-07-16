@@ -1,0 +1,14 @@
+<% provide :title, t("flash.users.edit.title") %>
+<% provide :button_text, t("flash.users.edit.button_text") %>
+<h1><%= t("flash.users.edit.heading") %></h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= render "form" %>
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <a href="http://gravatar.com/emails" target="_blank">
+        <%= t("flash.users.edit.change_gravatar") %>
+      </a>
+    </div>
+  </div>
+</div>
