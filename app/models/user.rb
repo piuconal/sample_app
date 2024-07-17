@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   USER_PARAMS = [:name, :email, :password, :password_confirmation].freeze
   before_save :downcase_email
-
+  scope :recent, ->{order(created_at: :desc)}
   validates :name,
             presence: true,
             length: {
@@ -17,6 +17,11 @@ class User < ApplicationRecord
             length: {maximum: Settings.user.email.max_length},
             format: {with: /\A#{Settings.user.email.valid_regex}\z/},
             uniqueness: true
+
+  validates :password,
+            presence: true,
+            length: {minimum: 6},
+            allow_nil: true
 
   has_secure_password
   attr_accessor :remember_token
