@@ -40,7 +40,10 @@ vi:
           email: "Email"
           password: "Mật khẩu"
           password_confirmation: "Xác nhận mật khẩu"
+
     logged_out: "Bạn đã đăng xuất."
+    info:
+      check_email: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản."
   help:
     title: "TRỢ GIÚP"
     help_text: "Để được trợ giúp về Hướng dẫn Ruby on Rails, vui lòng truy cập"
@@ -73,3 +76,8 @@ vi:
 
   sessions:
     invalid_email_password_combination: "Địa chỉ email hoặc mật khẩu không đúng."
+
+  account_activations:
+    success: "Tài khoản đã được kích hoạt!"
+    invalid_link: "Liên kết kích hoạt không hợp lệ"
+    not_activated: "Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để nhận liên kết kích hoạt."

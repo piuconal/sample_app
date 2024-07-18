@@ -42,6 +42,8 @@ en:
           password_confirmation: "Password confirmation"
 
     logged_out: "You have successfully logged out."
+    info:
+      check_email: "Please check your email to activate your account."
   help:
     title: "HELP"
     help_text: "Get help on the Ruby on Rails Tutorial at the "
@@ -73,3 +75,8 @@ en:
 
   sessions:
     invalid_email_password_combination: "Invalid email/password combination."
+
+  account_activations:
+    success: "Account activated!"
+    invalid_link: "Invalid activation link"
+    not_activated: "Account not activated. Check your email for the activation link."
