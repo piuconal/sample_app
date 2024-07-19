@@ -80,3 +80,25 @@ en:
     success: "Account activated!"
     invalid_link: "Invalid activation link"
     not_activated: "Account not activated. Check your email for the activation link."
+
+  password_resets:
+    email_sent: "Email sent with password reset instructions"
+    email_not_found: "Email address not found"
+    reset_password_success: "Reset password success"
+    user_not_found: "User not found!"
+    user_inactivated: "User is inactivated!"
+    reset_expired: "Password reset has expired."
+    error: "can't be empty"
+
+    title: "Reset password"
+    heading: "Reset password"
+    password_label: "Password"
+    password_confirmation_label: "Confirmation"
+    update_button: "Update password"
+    forgot_password_title: "Forgot password"
+    forgot_password_heading: "Forgot password"
+    email_label: "Email"
+    submit_button: "Submit"
+
+  links:
+    forgot_password: "(forgot password)"
