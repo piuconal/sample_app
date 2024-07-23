@@ -9,4 +9,15 @@ pagy:
     items: 10
 gravatar:
     size: 70
+
+micropost:
+  content:
+    max_length: 140
+
+image:
+  max_width: 200
+  max_height: 200
+
 digit_two: 2
+
+digit_five: 5

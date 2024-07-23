@@ -16,7 +16,10 @@ vi:
   confirmation: "Xác nhận"
   create_my_account: "Tạo tài khoản của tôi"
   flash:
+    danger: "Vui lòng đăng nhập."
+
     users:
+      profile_link: "Xem hồ sơ của tôi"
       not_found: "Không tìm thấy người dùng!"
       welcome: "Chào mừng đến với ứng dụng mẫu!"
       remember_me: "Hãy nhớ tôi trên máy tính này"
@@ -103,3 +106,19 @@ vi:
 
   links:
     forgot_password: "(quên mật khẩu)"
+
+  micropost:
+    created: "Bài viết đã được tạo!"
+    deleted: "Bài viết đã được xóa"
+    delete_fail: "Xóa không thành công"
+    invalid: "Bài viết không hợp lệ"
+    delete: "Xóa"
+    delete_confirmation: "Bạn chắc chắn chứ?"
+    posted: "Đăng vào"
+    placeholder: "Soạn bài viết mới..."
+    submit: "Đăng"
+    one: "bài viết"
+    other: "bài viết"
+    title: "Nguồn cấp dữ liệu micropost"
+
+

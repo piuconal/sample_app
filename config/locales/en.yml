@@ -16,7 +16,10 @@ en:
   confirmation: "Confirmation"
   create_my_account: "Create my account"
   flash:
+    danger: "Please log in."
+
     users:
+      profile_link: "View my profile"
       not_found: "User not found!"
       welcome: "Welcome to the Sample App!"
       remember_me: "Remember me on this computer"
@@ -102,3 +105,17 @@ en:
 
   links:
     forgot_password: "(forgot password)"
+
+  micropost:
+    created: "Micropost created!"
+    deleted: "Micropost deleted"
+    delete_fail: "Deleted fail"
+    invalid: "Micropost invalid"
+    delete: "Delete"
+    delete_confirmation: "You sure?"
+    posted: "Posted"
+    placeholder: "Compose new micropost..."
+    submit: "Post"
+    one: "micropost"
+    other: "microposts"
+    title: "Micropost Feed"

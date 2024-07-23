@@ -9,7 +9,9 @@ class UsersController < ApplicationController
     @pagy, @users = pagy(User.recent, items: items_per_page)
   end
 
-  def show; end
+  def show
+    @page, @microposts = pagy(@user.microposts, items: Settings.pagy.items)
+  end
 
   def new
     @user = User.new
@@ -71,7 +73,7 @@ class UsersController < ApplicationController
   def logged_in_user
     return if logged_in?
 
-    store_location
+    # store_location
     flash[:danger] = t("flash.users.login_required")
     redirect_to login_url
   end
