@@ -4,6 +4,9 @@ class User < ApplicationRecord
 
   before_save :downcase_email
   before_create :create_activation_digest
+
+  has_many :microposts, dependent: :destroy
+
   scope :recent, ->{order(created_at: :desc)}
 
   validates :name,
@@ -28,6 +31,10 @@ class User < ApplicationRecord
             allow_nil: true
 
   has_secure_password
+
+  def feed
+    microposts
+  end
 
   def password_reset_expired?
     reset_sent_at < Settings.digit_two.hours.ago
