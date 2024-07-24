@@ -1,8 +1,10 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: %i(index edit update destroy)
+  # before_action :logged_in_user, only: %i(index edit update destroy)
+  before_action :logged_in_user, except: %i(new create show)
   before_action :find_user, only: %i(show edit update destroy)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
+  before_action :set_user, only: %i(followers following)
 
   def index
     items_per_page = Settings.pagy.items
@@ -55,7 +57,27 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
 
+  def followers
+    @title = "Followers"
+    @pagy, @users = pagy @user.followers, items: Settings.pagy.items
+    render :show_follow
+  end
+
+  def following
+    @title = "Following"
+    @pagy, @users = pagy @user.following, items: Settings.pagy.items
+    render :show_follow
+  end
+
   private
+
+  def set_user
+    @user = User.find_by(id: params[:id])
+    return if @user
+
+    flash[:notice] = "User not found"
+    redirect_to root_url
+  end
 
   def user_params
     params.require(:user).permit(:name, :email,
@@ -73,7 +95,7 @@ class UsersController < ApplicationController
   def logged_in_user
     return if logged_in?
 
-    # store_location
+    store_location
     flash[:danger] = t("flash.users.login_required")
     redirect_to login_url
   end
