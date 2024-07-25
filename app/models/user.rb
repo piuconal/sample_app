@@ -6,6 +6,12 @@ class User < ApplicationRecord
   before_create :create_activation_digest
 
   has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+  foreign_key: :follower_id, dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+  foreign_key: :followed_id, dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
 
   scope :recent, ->{order(created_at: :desc)}
 
@@ -33,7 +39,7 @@ class User < ApplicationRecord
   has_secure_password
 
   def feed
-    microposts
+    Micropost.relate_post(following_ids << id)
   end
 
   def password_reset_expired?
@@ -89,6 +95,18 @@ class User < ApplicationRecord
     return false unless digest
 
     BCrypt::Password.new(digest).is_password? token
+  end
+
+  def follow other_user
+    following << other_user
+  end
+
+  def unfollow other_user
+    following.delete other_user
+  end
+
+  def following? other_user
+    following.include? other_user
   end
 
   private

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "relationships/create"
+  get "relationships/destroy"
   root "static_pages#home"
 
   get "static_pages/home"
@@ -15,9 +17,14 @@ Rails.application.routes.draw do
 
   resources :users, only: %i(new create show)
   # resources :users, only: %i(new create show edit update index destroy)
-  resources :users
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
   resources :password_resets, only: %i(new create edit update)
   resources :account_activations, only: :edit
 
   resources :microposts, only: %i(create destroy)
+  resources :relationships, only: %i(create destroy)
 end
